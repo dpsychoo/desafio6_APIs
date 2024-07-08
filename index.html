@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 6 APIs - Convertidor de Moneda</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de monedas Nacional🪙</h1>
+        <label for="clp">Pesos CLP</label>
+        <input type="number" id="clp" placeholder="Ingrese el monto en CLP">
+        
+        <label for="divisa">Moneda a convertir:</label>
+        <select id="divisa">
+            <!-- 3. El select implementa más de un tipo de moneda (con 2 es suficiente), todos los
+            cambios funcionan correctamente -->
+            <option value="dolar">Dólar (USD)</option>
+            <option value="euro">Euro (EUR)</option>
+            <option value="bitcoin">Bitcoin (BTC)</option>
+        </select>
+        
+        <button onclick="convertirMoneda()">Buscar</button>
+        
+        <div class="result" id="result"></div>
+        <div class="error" id="error"></div>
+    </div>
+    
+    <div class="chart-container">
+        <canvas id="chart"></canvas>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
